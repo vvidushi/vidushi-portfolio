@@ -30,6 +30,12 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 1.5rem;
+}
+
+[id="projects"],
+[id="experience"] {
+  scroll-margin-top: 1.5rem;
 }
 
 body {

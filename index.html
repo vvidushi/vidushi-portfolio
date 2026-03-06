@@ -94,7 +94,7 @@
     </div>
   </section>
 
-  <section class="section section-alt">
+  <section class="section section-alt" id="experience">
     <div class="container">
       <div class="section-heading-wrap"><h2 class="section-heading">Experience</h2></div>
       <div class="list-items">
@@ -132,6 +132,16 @@
     </div>
   </footer>
   <script>
+    (function() {
+      if (location.hash === '#projects' || location.hash === '#experience') {
+        var el = document.querySelector(location.hash);
+        if (el) {
+          window.addEventListener('load', function() {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+        }
+      }
+    })();
     document.getElementById('photo-input').addEventListener('change', function(e) {
       var file = e.target.files[0];
       if (!file) return;
