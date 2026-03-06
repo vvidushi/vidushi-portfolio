@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vidushi Verma | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="hero-content hero-layout">
+      <div class="hero-photo-wrap">
+        <img src="bubu.jpeg" alt="Vidushi Verma" class="hero-photo" id="hero-img" onerror="this.style.display='none'; document.getElementById('hero-placeholder').style.display='flex';">
+        <label for="photo-input" class="hero-photo hero-photo-placeholder" id="hero-placeholder" style="display:none" aria-hidden="true">Click to add photo</label>
+        <input type="file" id="photo-input" accept="image/*" style="display:none">
+      </div>
+      <div class="hero-text">
+        <h1 class="hero-name">Vidushi Verma</h1>
+        <p class="hero-title">M.S. Data Intelligence @ SJSU<br>Experienced Software Engineer · Data & AI Platforms</p>
+        <p class="hero-subtitle">From building data platforms at scale to exploring the frontier of AI—this is my story.</p>
+        <a href="#projects" class="hero-cta">See What I Build</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section section-alt">
+    <div class="container intro-layout">
+      <div class="intro-text">
+        <h2 class="section-heading">My Story</h2>
+        <p class="section-text">
+          I started in data—building systems for real-world ordering and inventory, then leading TB-scale cloud migrations that cut turnaround from weeks to hours. Recognized as Performer of the Year twice, I kept pushing. Now I'm at SJSU pursuing M.S. in Data Intelligence, layering ML, AI, and agentic systems on top of everything I've built—from pipelines to platforms to intelligence.
+        </p>
+      </div>
+      <div class="intro-graphic">
+        <img src="my-story.png" alt="My Story" class="intro-image">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-heading-wrap"><h2 class="section-heading section-heading-icon">Projects</h2></div>
+      
+      <div class="projects-grid">
+        <article class="project-card">
+        <h3 class="project-title">Kayak Travel Booking Platform with Multi-Agent AI</h3>
+          <p class="project-desc">Distributed travel booking platform (flights, hotels, cars) with decoupled services for search, booking, users, and inventory. Multi-agent LLM help center to automate support workflows.</p>
+          <ul class="project-highlights">
+            <li>Decoupled microservices architecture</li>
+            <li>Async orchestration for scalable concurrency</li>
+            <li>Itineraries, cancellations, refunds automation</li>
+          </ul>
+          <a href="https://github.com/vvidushi/kayak_distributed" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <h3 class="project-title">Airbnb Distributed Platform with Agentic AI Assistant</h3>
+          <p class="project-desc">3-tier microservices architecture (React, Node.js, MySQL). Integrated Python FastAPI and LangChain/Ollama AI travel planner for dynamic itinerary generation.</p>
+          <ul class="project-highlights">
+            <li>React, Node.js, MySQL stack</li>
+            <li>FastAPI + LangChain + Ollama</li>
+            <li>Dynamic AI-powered itinerary generation</li>
+          </ul>
+          <a href="https://github.com/vvidushi/Airbnb_distributed" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <h3 class="project-title">Healthcare Data Warehouse & Analytics Pipeline</h3>
+          <p class="project-desc">Real-time cloud data warehouse on AWS (Kinesis, Lambda, Glue, Redshift). Automated ETL to deliver interactive QuickSight dashboards for healthcare policy-level insights.</p>
+          <ul class="project-highlights">
+            <li>AWS Kinesis, Lambda, Glue, Redshift</li>
+            <li>Real-time ETL automation</li>
+            <li>QuickSight dashboards for policy insights</li>
+          </ul>
+          <a href="https://github.com/vvidushi/Data_Warehouse" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <h3 class="project-title">Marketing Campaign Analytics Pipeline</h3>
+          <p class="project-desc">ETL pipeline using AWS Redshift, Matillion, and SQL to integrate social media data. Automated orchestration to calculate key metrics (ROAS, CPA, ROI) and identify high-performing segments.</p>
+          <ul class="project-highlights">
+            <li>AWS Redshift, Matillion, SQL</li>
+            <li>ROAS, CPA, ROI metrics automation</li>
+            <li>Segment performance identification</li>
+          </ul>
+          <a href="https://github.com/vvidushi" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-heading-wrap"><h2 class="section-heading">Experience</h2></div>
+      <div class="list-items">
+        <div class="list-item">
+          <strong>Software Engineer — Data</strong> · UnitedHealth Group - Optum · Noida, India (2021 – 2024)
+          <p class="list-detail">Cloud data platform & ETL modernization. TB-scale migration from on-prem to Azure/Snowflake. Multi-format ingestion framework reduced turnaround from weeks to hours, saving 10k+ engineering hours. Kafka streams, Delta Lake, CI/CD modernization. Performer of the Year (twice).</p>
+        </div>
+        <div class="list-item">
+          <strong>Software Engineer</strong> · Hindustan Unilever · Bangalore, India (2019 – 2021)
+          <p class="list-detail">B2C data systems for salesman-facing ordering platforms. B2B retailer platform (Shikhar) development, database optimization, end-to-end testing, and data validation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading-wrap"><h2 class="section-heading">What I Believe</h2></div>
+      <p class="section-text quote">
+        Keep learning. Keep building. The best version of what you can create is always one step ahead—and that's what makes it worth chasing.
+      </p>
+    </div>
+  </section>
+
+  <footer class="contact">
+    <div class="container">
+      <div class="contact-block">
+        <h2 class="section-heading">Contact</h2>
+        <nav class="contact-links">
+        <a href="https://www.linkedin.com/in/vidushi--verma/" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+        <a href="mailto:vidushi.verma@sjsu.edu" class="contact-link">Email</a>
+        <a href="https://github.com/vvidushi" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
+      </nav>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('photo-input').addEventListener('change', function(e) {
+      var file = e.target.files[0];
+      if (!file) return;
+      var reader = new FileReader();
+      reader.onload = function() {
+        var img = document.getElementById('hero-img');
+        img.src = reader.result;
+        img.style.display = 'block';
+        document.getElementById('hero-placeholder').style.display = 'none';
+      };
+      reader.readAsDataURL(file);
+    });
+  </script>
+</body>
+</html>

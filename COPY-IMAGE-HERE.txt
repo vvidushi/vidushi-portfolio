@@ -1,0 +1,10 @@
+To show your photo, copy bubu.jpeg into this folder:
+
+1. Open Finder
+2. Go to Downloads and find bubu.jpeg
+3. Copy it (Cmd+C)
+4. Open this folder: Documents/bubu/profile/
+5. Paste it here (Cmd+V)
+
+Or run in Terminal:
+cp ~/Downloads/bubu.jpeg ~/Documents/bubu/profile/
